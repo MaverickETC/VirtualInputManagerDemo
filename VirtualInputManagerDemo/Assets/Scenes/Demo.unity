@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 8
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -39,6 +39,7 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -54,11 +55,10 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 9
+    serializedVersion: 10
     m_Resolution: 2
     m_BakeResolution: 40
-    m_TextureWidth: 1024
-    m_TextureHeight: 1024
+    m_AtlasSize: 1024
     m_AO: 0
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
@@ -113,106 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &29201693
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 29201695}
-  - component: {fileID: 29201694}
-  m_Layer: 0
-  m_Name: InputManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &29201694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 29201693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a19c2a83f6f22324bbc1ee351812018c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystickList:
-  - ID: 0
-    isUsingController: 0
-    analogList:
-    - joystickID: 0
-      isUsingController: 0
-      controllerAnalogID: 0
-      xAxis:
-        joystickID: 0
-        isUsingController: 0
-        controllerAxisID: 8
-        positiveButton:
-          joystickID: 0
-          isUsingController: 0
-          key: 0
-          holdTime: 0
-          holdTimeSeconds: 0
-        negativeButton:
-          joystickID: 0
-          isUsingController: 0
-          key: 0
-          holdTime: 0
-          holdTimeSeconds: 0
-        position: 0
-      yAxis:
-        joystickID: 0
-        isUsingController: 0
-        controllerAxisID: 8
-        positiveButton:
-          joystickID: 0
-          isUsingController: 0
-          key: 0
-          holdTime: 0
-          holdTimeSeconds: 0
-        negativeButton:
-          joystickID: 0
-          isUsingController: 0
-          key: 0
-          holdTime: 0
-          holdTimeSeconds: 0
-        position: 0
-      direction: {x: 0, y: 0}
-    axisList:
-    - joystickID: 0
-      isUsingController: 0
-      controllerAxisID: 8
-      positiveButton:
-        joystickID: 0
-        isUsingController: 0
-        key: 0
-        holdTime: 0
-        holdTimeSeconds: 0
-      negativeButton:
-        joystickID: 0
-        isUsingController: 0
-        key: 0
-        holdTime: 0
-        holdTimeSeconds: 0
-      position: 0
-    buttonList: []
---- !u!4 &29201695
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 29201693}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &108500069
 GameObject:
   m_ObjectHideFlags: 0
@@ -294,544 +194,579 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &141301738
-GameObject:
+--- !u!1001 &2136471850
+Prefab:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 141301739}
-  m_Layer: 5
-  m_Name: Buttons
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &141301739
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 141301738}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1782897994}
-  - {fileID: 1621529164}
-  - {fileID: 930521293}
-  - {fileID: 1260731879}
-  m_Father: {fileID: 552944576}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 257.34186, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &178173675
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 178173676}
-  - component: {fileID: 178173678}
-  - component: {fileID: 178173677}
-  m_Layer: 5
-  m_Name: AnalogStick
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &178173676
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 178173675}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1593723194}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &178173677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 178173675}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &178173678
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 178173675}
---- !u!1 &552944573
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 552944576}
-  - component: {fileID: 552944575}
-  - component: {fileID: 552944574}
-  - component: {fileID: 552944577}
-  m_Layer: 5
-  m_Name: VirtualController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &552944574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 552944573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
---- !u!223 &552944575
-Canvas:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 552944573}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &552944576
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 552944573}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 1593723194}
-  - {fileID: 141301739}
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!114 &552944577
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 552944573}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2cc7b11cc5025fc4d9960ec16495f9b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AnalogStick: {fileID: 0}
-  ButtonA: {fileID: 0}
-  ButtonB: {fileID: 0}
-  ButtonX: {fileID: 0}
-  ButtonY: {fileID: 0}
---- !u!1 &930521292
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 930521293}
-  - component: {fileID: 930521295}
-  - component: {fileID: 930521294}
-  m_Layer: 5
-  m_Name: B
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &930521293
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 930521292}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 141301739}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &930521294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 930521292}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.21323526, b: 0.21323526, a: 1}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &930521295
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 930521292}
---- !u!1 &1260731878
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1260731879}
-  - component: {fileID: 1260731881}
-  - component: {fileID: 1260731880}
-  m_Layer: 5
-  m_Name: A
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1260731879
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1260731878}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 141301739}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1260731880
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1260731878}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.08199795, g: 0.7965517, b: 0, a: 1}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1260731881
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1260731878}
---- !u!1 &1593723193
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1593723194}
-  - component: {fileID: 1593723196}
-  - component: {fileID: 1593723195}
-  m_Layer: 5
-  m_Name: Analog
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1593723194
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1593723193}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 178173676}
-  m_Father: {fileID: 552944576}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -237.6, y: 0}
-  m_SizeDelta: {x: 200, y: 200}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1593723195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1593723193}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.1, g: 0.1, b: 0.1, a: 1}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1593723196
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1593723193}
---- !u!1 &1621529163
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1621529164}
-  - component: {fileID: 1621529166}
-  - component: {fileID: 1621529165}
-  m_Layer: 5
-  m_Name: Y
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1621529164
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1621529163}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 141301739}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 100}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1621529165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1621529163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.80330884, b: 0.21323526, a: 1}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1621529166
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1621529163}
---- !u!1 &1782897993
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1782897994}
-  - component: {fileID: 1782897996}
-  - component: {fileID: 1782897995}
-  m_Layer: 5
-  m_Name: X
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1782897994
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1782897993}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 141301739}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1782897995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1782897993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.1, g: 0.1, b: 1, a: 1}
-  m_RaycastTarget: 0
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
---- !u!222 &1782897996
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1782897993}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[0].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[1].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[3].analogCollection.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[0].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[0].buttonCollection.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[1].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[1].buttonCollection.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[2].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[3].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[4].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[5].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[6].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[7].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[8].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[9].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[10].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[11].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[12].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[13].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[14].axisCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[2].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[2].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[3].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[3].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[4].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[4].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[5].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[5].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[6].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[6].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[7].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[7].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[8].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[8].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[9].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[9].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[10].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[10].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[11].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[11].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[12].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[12].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[13].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[13].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[14].analogCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[14].buttonCollection.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160992477398332, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160992477398332, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160992477398332, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160992477398332, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160992477398332, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160992477398332, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160992477398332, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4160992477398332, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[0].buttonCollection.Array.data[0].key
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[0].isUsingController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[0].buttonCollection.Array.data[1].isUsingController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[0].buttonCollection.Array.data[0].isUsingController
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[1].buttonCollection.Array.data[0].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickList.Array.data[1].buttonCollection.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[0].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].axisCollection.Array.data[0].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].axisCollection.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].buttonCollection.Array.data[0].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].buttonCollection.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].analogCollection.Array.data[0].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].analogCollection.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].axisCollection.Array.data[0].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].axisCollection.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].buttonCollection.Array.data[0].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].buttonCollection.Array.data[1].isUsingController
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1476999258202986, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].axisCollection.Array.data[0].negativeButton.key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].axisCollection.Array.data[1].negativeButton.key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].buttonCollection.Array.data[0].key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].buttonCollection.Array.data[1].key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].buttonCollection.Array.data[0].controllerButton
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].buttonCollection.Array.data[1].controllerButton
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].buttonCollection.Array.data[0].key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].buttonCollection.Array.data[1].key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[1].ID
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[0].controllerAnalogButton
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[1].controllerAnalogButton
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[1].controllerAnalog
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[2].ID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[3].ID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[0].xAxis.negativeButton.key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[0].xAxis.positiveButton.key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[0].yAxis.negativeButton.key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].analogCollection.Array.data[0].yAxis.positiveButton.key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[0].axisCollection.Array.data[0].positiveButton.key
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[4].ID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[5].ID
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[6].ID
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[7].ID
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[8].ID
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[9].ID
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[10].ID
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[11].ID
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[12].ID
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[13].ID
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474372120454704, guid: 08375781457f9d344bf1d6358c38da69,
+        type: 2}
+      propertyPath: joystickCollection.Array.data[14].ID
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 08375781457f9d344bf1d6358c38da69, type: 2}
+  m_IsPrefabParent: 0

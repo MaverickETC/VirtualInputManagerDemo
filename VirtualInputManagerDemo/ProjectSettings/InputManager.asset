@@ -6,7 +6,7 @@ InputManager:
   serializedVersion: 2
   m_Axes:
   - serializedVersion: 3
-    m_Name: Controller 1 Left Analog X
+    m_Name: Controller 1 LeftStickX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -22,7 +22,7 @@ InputManager:
     axis: 0
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 Left Analog X
+    m_Name: Controller 2 LeftStickX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -38,7 +38,7 @@ InputManager:
     axis: 0
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 Left Analog X
+    m_Name: Controller 3 LeftStickX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -54,7 +54,7 @@ InputManager:
     axis: 0
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 Left Analog X
+    m_Name: Controller 4 LeftStickX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -70,7 +70,7 @@ InputManager:
     axis: 0
     joyNum: 4
   - serializedVersion: 3
-    m_Name: Controller 1 Left Analog Y
+    m_Name: Controller 1 LeftStickY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -86,7 +86,7 @@ InputManager:
     axis: 1
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 Left Analog Y
+    m_Name: Controller 2 LeftStickY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -102,7 +102,7 @@ InputManager:
     axis: 1
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 Left Analog Y
+    m_Name: Controller 3 LeftStickY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -118,7 +118,7 @@ InputManager:
     axis: 1
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 Left Analog Y
+    m_Name: Controller 4 LeftStickY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -134,7 +134,7 @@ InputManager:
     axis: 1
     joyNum: 4
   - serializedVersion: 3
-    m_Name: Controller 1 Right Analog X
+    m_Name: Controller 1 RightStickX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -150,7 +150,7 @@ InputManager:
     axis: 3
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 Right Analog X
+    m_Name: Controller 2 RightStickX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -166,7 +166,7 @@ InputManager:
     axis: 3
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 Right Analog X
+    m_Name: Controller 3 RightStickX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -182,7 +182,7 @@ InputManager:
     axis: 3
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 Right Analog X
+    m_Name: Controller 4 RightStickX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -198,7 +198,7 @@ InputManager:
     axis: 3
     joyNum: 4
   - serializedVersion: 3
-    m_Name: Controller 1 Right Analog Y
+    m_Name: Controller 1 RightStickY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -214,7 +214,7 @@ InputManager:
     axis: 4
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 Right Analog Y
+    m_Name: Controller 2 RightStickY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -230,7 +230,7 @@ InputManager:
     axis: 4
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 Right Analog Y
+    m_Name: Controller 3 RightStickY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -246,7 +246,7 @@ InputManager:
     axis: 4
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 Right Analog Y
+    m_Name: Controller 4 RightStickY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -262,7 +262,7 @@ InputManager:
     axis: 4
     joyNum: 4
   - serializedVersion: 3
-    m_Name: Controller 1 D-Pad X
+    m_Name: Controller 1 DPadX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -278,7 +278,7 @@ InputManager:
     axis: 5
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 D-Pad X
+    m_Name: Controller 2 DPadX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -294,7 +294,7 @@ InputManager:
     axis: 5
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 D-Pad X
+    m_Name: Controller 3 DPadX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -310,7 +310,7 @@ InputManager:
     axis: 5
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 D-Pad X
+    m_Name: Controller 4 DPadX
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -326,7 +326,7 @@ InputManager:
     axis: 5
     joyNum: 4
   - serializedVersion: 3
-    m_Name: Controller 1 D-Pad Y
+    m_Name: Controller 1 DPadY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -342,7 +342,7 @@ InputManager:
     axis: 6
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 D-Pad Y
+    m_Name: Controller 2 DPadY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -358,7 +358,7 @@ InputManager:
     axis: 6
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 D-Pad Y
+    m_Name: Controller 3 DPadY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -374,7 +374,7 @@ InputManager:
     axis: 6
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 D-Pad Y
+    m_Name: Controller 4 DPadY
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -390,7 +390,7 @@ InputManager:
     axis: 6
     joyNum: 4
   - serializedVersion: 3
-    m_Name: Controller 1 Left Trigger
+    m_Name: Controller 1 LeftTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -406,7 +406,7 @@ InputManager:
     axis: 8
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 Left Trigger
+    m_Name: Controller 2 LeftTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -422,7 +422,7 @@ InputManager:
     axis: 8
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 Left Trigger
+    m_Name: Controller 3 LeftTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -438,7 +438,7 @@ InputManager:
     axis: 8
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 Left Trigger
+    m_Name: Controller 4 LeftTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -454,7 +454,7 @@ InputManager:
     axis: 8
     joyNum: 4
   - serializedVersion: 3
-    m_Name: Controller 1 Right Trigger
+    m_Name: Controller 1 RightTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -470,7 +470,7 @@ InputManager:
     axis: 9
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 Right Trigger
+    m_Name: Controller 2 RightTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -486,7 +486,7 @@ InputManager:
     axis: 9
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 Right Trigger
+    m_Name: Controller 3 RightTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -502,7 +502,7 @@ InputManager:
     axis: 9
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 Right Trigger
+    m_Name: Controller 4 RightTrigger
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -518,7 +518,7 @@ InputManager:
     axis: 9
     joyNum: 4
   - serializedVersion: 3
-    m_Name: Controller 1 Both Triggers
+    m_Name: Controller 1 Triggers
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -534,7 +534,7 @@ InputManager:
     axis: 2
     joyNum: 1
   - serializedVersion: 3
-    m_Name: Controller 2 Both Triggers
+    m_Name: Controller 2 Triggers
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -550,7 +550,7 @@ InputManager:
     axis: 2
     joyNum: 2
   - serializedVersion: 3
-    m_Name: Controller 3 Both Triggers
+    m_Name: Controller 3 Triggers
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
@@ -566,7 +566,7 @@ InputManager:
     axis: 2
     joyNum: 3
   - serializedVersion: 3
-    m_Name: Controller 4 Both Triggers
+    m_Name: Controller 4 Triggers
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
